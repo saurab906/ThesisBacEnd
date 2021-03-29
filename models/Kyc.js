@@ -7,43 +7,43 @@ const KYCSCHEMA = new SCHEMA({
         type: String,
         required: [true, "First name is required"],
         trim: true,
-      },
-      fatherName: {
+    },
+    fatherName: {
         type: String,
         required: [true, "Family name is required"],
         trim: true,
-      },
-      grandfather: {
+    },
+    grandfather: {
         type: String,
         required: [true, "GrandFather is required"],
         unique: true,
         trim: true,
-      },
+    },
 
-      dob: {
+    dob: {
         type: Date,
         trim: true,
-      },
- Gender: {
+    },
+    Gender: {
         type: String,
         trim: true,
-      },
+    },
 
-      email: {
+    email: {
         type: String,
         required: true,
         trim: true,
-      },
-      password: {
+    },
+    password: {
         type: String,
         required: [true, "email is required"],
         trim: true,
-      },
-      fatherName: {
-        type: String,
+    },
+    phone: {
+        type: Number,
         required: [true, "Family name is required"],
         trim: true,
-      },
+    },
     createdAt: {
         type: Date,
         default: Date.now,
